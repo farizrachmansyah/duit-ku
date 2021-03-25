@@ -26,13 +26,39 @@
       </nav>
     </header>
 
-    <main class="loginform container--px flex flex-ai-c">
-      <div class="loginform__desc">
-        <h1 class="text">Let's sign you in.</h1>
-        <p class="subtext">
-          Welcome back. <br />
-          You've been missed!
-        </p>
+    <main class="loginform container--p">
+      <a class="loginform__back" href="./index.html">
+        <i class="fas fa-chevron-left"></i>
+      </a>
+
+      <div class="loginform__content">
+        <div class="desc">
+          <h1 class="desc__text">Let's sign you in.</h1>
+          <p class="desc__subtext">
+            Welcome back. <br />
+            You've been missed!
+          </p>
+        </div>
+        <form class="form">
+          <div class="form__field flex flex-ai-c flex-jc-sb">
+            <span class="icon">
+              <i class="fas fa-envelope"></i>
+            </span>
+            <input type="email" placeholder="Email Address" required />
+            <span class="icon">
+              <i class="fas fa-arrow-down"></i>
+            </span>
+          </div>
+          <div class="form__field hide flex flex-ai-c flex-jc-sb">
+            <span class="icon">
+              <i class="fas fa-key"></i>
+            </span>
+            <input type="password" placeholder="Password" required />
+            <span class="icon">
+              <i class="fas fa-arrow-down"></i>
+            </span>
+          </div>
+        </form>
       </div>
     </main>
 
