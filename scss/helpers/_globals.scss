@@ -1,0 +1,67 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 16px;
+}
+
+body {
+  background: $dark-color;
+  color: $white-color;
+  font-family: $ff-primary;
+}
+
+p {
+  line-height: 1.4;
+}
+
+a {
+  text-decoration: none;
+}
+
+.btn {
+  border: none;
+  border-radius: 12px;
+  padding: 1rem 0;
+  text-transform: capitalize;
+  text-align: center;
+  background-color: $white-color;
+  color: $secondary-color;
+  font-size: 1rem;
+  font-family: $ff-primary;
+  font-weight: weight(bold);
+}
+
+// Utillities
+.container {
+  max-width: 1170px;
+
+  &--p {
+    padding: 1.5rem;
+  }
+  &--px {
+    padding: 0 1.5rem;
+  }
+  &--py {
+    padding: 1.5rem 0;
+  }
+}
+
+.flex {
+  display: flex;
+
+  &-ai-c {
+    align-items: center;
+  }
+  &-jc-c {
+    justify-content: center;
+  }
+  &-jc-sb {
+    justify-content: space-between;
+  }
+}

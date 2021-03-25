@@ -1,0 +1,51 @@
+.home {
+  height: calc(100vh - 57px);
+  flex-direction: column;
+  padding-bottom: 1.5rem;
+
+  &__illustration {
+    img {
+      width: 70%;
+      aspect-ratio: 1/1;
+    }
+  }
+
+  &__intro {
+    flex-direction: column;
+    height: 100%;
+
+    &-desc {
+      .title {
+        margin-bottom: 0.875rem;
+        font-size: 1.75rem;
+        text-align: center;
+      }
+      .desc {
+        color: $light-color;
+        font-size: 0.875rem;
+        text-align: center;
+      }
+    }
+
+    &-login {
+      width: 100%;
+
+      .register {
+        display: block;
+        margin-bottom: 0.875rem;
+        text-align: center;
+        color: $light-color;
+        font-size: 0.875rem;
+
+        .signup {
+          color: $white-color;
+        }
+      }
+
+      .login {
+        display: block;
+        padding: 0.875rem 0;
+      }
+    }
+  }
+}
