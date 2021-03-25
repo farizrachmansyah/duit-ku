@@ -31,7 +31,7 @@
         width: 100%;
         height: 40px;
         border-radius: 5px;
-        background-color: $white-color;
+        background-color: $secondary-color;
         transition: all 0.3s ease-in;
 
         &.hide {
@@ -52,6 +52,7 @@
           border: none;
           background: none;
           outline: none;
+          color: $light-color;
           font-family: $ff-primary;
         }
 
@@ -60,16 +61,36 @@
           height: 100%;
           border-radius: 5px;
           background: none;
+          color: $light-color;
         }
 
         button {
           border: none;
+          outline: none;
 
           &:hover {
-            background-color: $light-color;
+            background-color: $dark-color;
           }
         }
       }
     }
+  }
+}
+
+@keyframes errorShake {
+  0% {
+    transform: translateY(-50%) rotate(0deg);
+  }
+  25% {
+    transform: translateY(-50%) rotate(7deg);
+  }
+  50% {
+    transform: translateY(-50%) rotate(0deg);
+  }
+  75% {
+    transform: translateY(-50%) rotate(-7deg);
+  }
+  100% {
+    transform: translateY(-50%) rotate(0deg);
   }
 }
