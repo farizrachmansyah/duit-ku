@@ -20,17 +20,21 @@
     />
   </head>
   <body>
+    <!-- Header and Nav -->
     <header class="header container--px hide-for-mobile">
       <nav class="header__nav container">
         <span><a href="#" class="logo">DuitKu</a></span>
       </nav>
     </header>
 
+    <!-- Main -->
     <main class="loginform container--p">
+      <!-- Back Button -->
       <a class="loginform__back" href="./index.html">
         <i class="fas fa-chevron-left"></i>
       </a>
 
+      <!-- Content of Login Page -->
       <div class="loginform__content">
         <div class="desc">
           <h1 class="desc__text">Let's sign you in.</h1>
@@ -39,24 +43,26 @@
             You've been missed!
           </p>
         </div>
+
+        <!-- Form -->
         <form class="form">
           <div class="form__field flex flex-ai-c flex-jc-sb">
             <span class="icon">
               <i class="fas fa-envelope"></i>
             </span>
             <input type="email" placeholder="Email Address" required />
-            <span class="icon">
+            <button class="icon">
               <i class="fas fa-arrow-down"></i>
-            </span>
+            </button>
           </div>
           <div class="form__field hide flex flex-ai-c flex-jc-sb">
             <span class="icon">
               <i class="fas fa-key"></i>
             </span>
             <input type="password" placeholder="Password" required />
-            <span class="icon">
+            <button class="icon" type="submit">
               <i class="fas fa-arrow-down"></i>
-            </span>
+            </button>
           </div>
         </form>
       </div>
