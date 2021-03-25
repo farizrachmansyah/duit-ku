@@ -39,6 +39,10 @@
 
         .signup {
           color: $white-color;
+
+          &:hover {
+            text-decoration: underline;
+          }
         }
       }
 

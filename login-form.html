@@ -20,13 +20,21 @@
     />
   </head>
   <body>
-    <header class="header container--px">
+    <header class="header container--px hide-for-mobile">
       <nav class="header__nav container">
         <span><a href="#" class="logo">DuitKu</a></span>
       </nav>
     </header>
 
-    <main class="loginform container--px flex flex-ai-c"></main>
+    <main class="loginform container--px flex flex-ai-c">
+      <div class="loginform__desc">
+        <h1 class="text">Let's sign you in.</h1>
+        <p class="subtext">
+          Welcome back. <br />
+          You've been missed!
+        </p>
+      </div>
+    </main>
 
     <script src="./dist/js/main.js"></script>
   </body>

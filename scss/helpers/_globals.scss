@@ -65,3 +65,15 @@ a {
     justify-content: space-between;
   }
 }
+
+// hidding elements
+.hide-for-mobile {
+  @include breakpoint-down(phone) {
+    display: none;
+  }
+}
+.hide-for-desktop {
+  @include breakpoint-up(smDesktop) {
+    display: none;
+  }
+}
