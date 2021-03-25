@@ -46,9 +46,37 @@ class UI {
   }
 
   nextField(current, next) {
-    current.classList.add('hide');
-    current.classList.remove('show');
-    next.classList.add('show');
+    if (next) {
+      current.classList.add('hide');
+      current.classList.remove('show');
+      next.classList.add('show');
+    } else {
+      current.classList.add('hide');
+      current.classList.remove('show');
+      this.showSignInInfo();
+      setTimeout(() => {
+        window.location.replace("index.html");
+      }, 2200);
+    }
+  }
+
+  showSignInInfo() {
+    const Toast = Swal.mixin({
+      toast: true,
+      position: 'top-end',
+      showConfirmButton: false,
+      timer: 2000,
+      timerProgressBar: true,
+      didOpen: (toast) => {
+        toast.addEventListener('mouseenter', Swal.stopTimer)
+        toast.addEventListener('mouseleave', Swal.resumeTimer)
+      }
+    })
+
+    Toast.fire({
+      icon: 'success',
+      title: 'Signed in successfully'
+    })
   }
 
   error(color) {
