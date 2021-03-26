@@ -6,6 +6,10 @@
 
   &__back {
     color: $dark-color;
+
+    @include breakpoint-up(smPhone) {
+      font-size: 1.5rem;
+    }
   }
 
   &__content {
@@ -17,9 +21,24 @@
       top: 25%;
       transform: translateY(-25%);
 
+      @include breakpoint-up(smPhone) {
+        top: 20%;
+        transform: translateY(-20%);
+      }
+
+      &__text {
+        @include breakpoint-up(smPhone) {
+          font-size: 2.25rem;
+        }
+      }
+
       &__subtext {
         margin-top: 1rem;
         font-size: 1.25rem;
+
+        @include breakpoint-up(smPhone) {
+          font-size: 1.5rem;
+        }
       }
     }
 
@@ -34,6 +53,10 @@
         background-color: $secondary-color;
         transition: all 0.3s ease-in;
 
+        @include breakpoint-up(smPhone) {
+          height: 50px;
+        }
+
         &.hide {
           opacity: 0;
           pointer-events: none;
@@ -46,6 +69,10 @@
           transform: translateY(-50%);
         }
 
+        span {
+          flex-direction: column;
+        }
+
         input {
           flex: 1;
           height: 100%;
@@ -54,6 +81,10 @@
           outline: none;
           color: $light-color;
           font-family: $ff-primary;
+
+          @include breakpoint-up(smPhone) {
+            font-size: 1.125rem;
+          }
         }
 
         .icon {
@@ -62,6 +93,10 @@
           border-radius: 5px;
           background: none;
           color: $light-color;
+
+          @include breakpoint-up(smPhone) {
+            font-size: 1.125rem;
+          }
         }
 
         button {

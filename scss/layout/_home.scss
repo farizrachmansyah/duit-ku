@@ -19,11 +19,19 @@
         margin-bottom: 0.875rem;
         font-size: 1.75rem;
         text-align: center;
+
+        @include breakpoint-up(smPhone) {
+          font-size: 2rem;
+        }
       }
       .desc {
         color: $light-color;
         font-size: 0.875rem;
         text-align: center;
+
+        @include breakpoint-up(smPhone) {
+          font-size: 1rem;
+        }
       }
     }
 
